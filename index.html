@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTheme</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input__container">
+      <h2>Oblicz ile kosztuje twoja trasa:</h2>
+      <div class="col">
+        <div class="row">
+          <label for="cena">Cena paliwa</label>
+          <input id="cena" type="number" />
+        </div>
+        <div class="row">
+          <label for="spalanie"> Średnie spalanie na 100km </label>
+          <input type="number" id="spalanie" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="roww">
+            <input id="dwiestrony" type="checkbox" name="" />
+            <label for="dwiestrony"> W dwie strony </label>
+            <label class="dwiestrony" for="dwiestrony"></label>
+          </div>
+          <label for="km"> Ilość km </label>
+          <input id="km" type="number" />
+        </div>
+      </div>
+      <div class="row__oblicz">
+        <button class="oblicz">Oblicz</button>
+      </div>
+      <div class="output__container">
+        <div class="row__labels">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="row__solutions">
+          <span> </span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
